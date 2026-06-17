@@ -4,6 +4,7 @@ import Image, { type ImageProps } from 'next/image';
 
 interface OptimizedImageProps extends Omit<ImageProps, 'quality' | 'placeholder' | 'sizes'> {
   quality?: number;
+  placeholder?: 'blur' | 'empty';
   sizes?: string;
 }
 
