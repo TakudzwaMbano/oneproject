@@ -3,26 +3,29 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import aboutImage from '../../images/building.jpg';
 
 export default function AboutPreview() {
   return (
     <section id="about" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="w-full max-w-[1800px] mx-auto px-6 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-[1.05fr_.95fr] items-center">
           {/* Left - Image */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative aspect-[4/3]"
+            className="relative overflow-hidden shadow-2xl"
           >
-            <Image
-              src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Professional construction team at work"
-              fill
-              className="object-cover"
-            />
+            <div className="aspect-[4/3] relative">
+              <Image
+                src={aboutImage}
+                alt="Professional construction team at work"
+                fill
+                className="object-cover"
+              />
+            </div>
           </motion.div>
 
           {/* Right - Content */}

@@ -4,35 +4,35 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import project1 from '../../images/building.jpg';
+import project2 from '../../images/cabin.jpg';
+import project3 from '../../images/building5.jpg';
 
 const projects = [
   {
     title: 'Modern Nutec Residence',
     location: 'Johannesburg, Gauteng',
     service: 'Nutec Houses',
-    image:
-      'https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: project1,
   },
   {
     title: 'Garden Wendy House',
     location: 'Pretoria, Gauteng',
     service: 'Wendy Houses',
-    image:
-      'https://images.pexels.com/photos/259936/pexels-photo-259936.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: project2,
   },
   {
     title: 'Complete Home Renovation',
     location: 'Cape Town, Western Cape',
     service: 'Full Service',
-    image:
-      'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: project3,
   },
 ];
 
 export default function FeaturedProjects() {
   return (
     <section id="projects" className="py-24 bg-brand-charcoal">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="w-full max-w-[1800px] mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -59,13 +59,13 @@ export default function FeaturedProjects() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <motion.div
-              key={index}
+            <motion.article
+              key={project.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group"
+              className="group overflow-hidden bg-slate-950 shadow-2xl shadow-slate-950/20"
             >
               <div className="relative aspect-[4/3] overflow-hidden mb-4">
                 <Image
@@ -75,18 +75,16 @@ export default function FeaturedProjects() {
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className="flex items-start justify-between">
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-1">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-400 text-sm">{project.location}</p>
-                </div>
-                <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wide bg-brand-green text-white">
+              <div className="px-6 pb-6">
+                <h3 className="text-2xl font-bold text-white mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-gray-400 text-sm mb-4">{project.location}</p>
+                <span className="inline-flex bg-brand-green px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-white">
                   {project.service}
                 </span>
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
       </div>

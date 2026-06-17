@@ -15,7 +15,7 @@ const contactInfo = [
     icon: Phone,
     label: 'Phone',
     value: '+27 71 901 2337',
-    href: 'tel:+27719012337',
+    href: 'https://wa.me/27719012337?text=Hi,%20I%20need%20a%20quote',
   },
   {
     icon: Phone,
@@ -42,16 +42,14 @@ export default function ContactPreview() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const serviceText = formData.service || 'General inquiry';
+    const messageText = `Hello Greenbuild, I would like a quote for: ${serviceText}.\nName: ${formData.name}.\nEmail: ${formData.email}.\nPhone: ${formData.phone}.\nMessage: ${formData.message}`;
+    const whatsappUrl = `https://wa.me/27719012337?text=${encodeURIComponent(messageText)}`;
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    window.location.href = whatsappUrl;
   };
 
   return (

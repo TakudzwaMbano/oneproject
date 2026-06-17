@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { CheckCircle, Users, Shield, Wallet, Clock, ThumbsUp } from 'lucide-react';
+import reasonImage from '../../images/building5.jpg';
 
 const reasons = [
   {
@@ -34,22 +35,24 @@ const reasons = [
 export default function WhyChooseUs() {
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="w-full max-w-[1800px] mx-auto px-6 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-[0.95fr_1fr] items-center">
           {/* Left - Image */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative aspect-[4/5]"
+            className="relative overflow-hidden shadow-2xl"
           >
-            <Image
-              src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Professional construction work"
-              fill
-              className="object-cover"
-            />
+            <div className="aspect-[4/5] relative">
+              <Image
+                src={reasonImage}
+                alt="Professional construction work"
+                fill
+                className="object-cover"
+              />
+            </div>
           </motion.div>
 
           {/* Right - Content */}
@@ -66,11 +69,11 @@ export default function WhyChooseUs() {
               Why Clients Choose Greenbuild
             </h2>
 
-            <div className="grid gap-6">
+            <div className="grid gap-5 sm:grid-cols-2">
               {reasons.map((reason, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-4 p-4 border border-gray-200 hover:border-brand-green transition-colors"
+                  className="flex items-center gap-4 border border-gray-200 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-brand-green"
                 >
                   <reason.icon className="w-6 h-6 text-brand-green flex-shrink-0" />
                   <span className="font-semibold text-brand-charcoal">
