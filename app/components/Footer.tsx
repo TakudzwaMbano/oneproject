@@ -34,7 +34,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Greenbuild Security and Energy (PVT) LTD specializes in premium Nutec houses, Wendy houses, and comprehensive property improvement services across South Africa.
+              Greenbuild Security and Energy (PTY) LTD specializes in premium Nutec houses, Wendy houses, and comprehensive property improvement services across South Africa.
             </p>
             <div className="flex items-start gap-3">
               <Mail className="w-5 h-5 text-brand-green flex-shrink-0" />
@@ -124,7 +124,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="pt-8">
           <p className="text-sm text-gray-500 text-center">
-            2026 Greenbuild Security and Energy (PVT) LTD. All Rights Reserved.
+            Designed and Built by Takudzwa Mbano • +919588511784 • mbanotakudzwa2001@gmail.com
           </p>
         </div>
       </div>

@@ -34,7 +34,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand-green mb-6">
-              GREENBUILD SECURITY AND ENERGY (PVT) LTD
+              GREENBUILD SECURITY AND ENERGY (PTY) LTD
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Premium Nutec & Wendy House Construction

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://greenbuildnutec.co.za/sitemap.xml
