@@ -10,21 +10,27 @@ import type { StaticImageData } from 'next/image';
 import nutecImage from '../images/building.jpg';
 import nutecImage2 from '../images/building5.jpg';
 import nutecImage3 from '../images/hero.jpg';
-import wendyImage from '../images/cabin.jpg';
-import wendyImage2 from '../images/building.jpg';
-import wendyImage3 from '../images/hero.jpg';
+import wendyImage from '../images/wendyhouse1.jpeg';
+import wendyImage2 from '../images/wendyhouse2.jpeg';
+import wendyImage3 from '../images/wendyhouse3.jpeg';
+import wendyImage4 from '../images/cabin.jpg';
 import plumbingImage from '../images/plumbing.jpg';
 import plumbingImage2 from '../images/plumb2.jpg';
 import plumbingImage3 from '../images/plumbin3.jpg';
 import electricalImage from '../images/electrical.jpg';
-import electricalImage2 from '../images/electrcalwiring.jpg';
-import electricalImage3 from '../images/building.jpg';
+import electricalImage2 from '../images/electrical4.jpeg';
+import electricalImage3 from '../images/electrical5.jpeg';
+import electricalImage4 from '../images/electrical6.jpeg';
+import electricalImage5 from '../images/electrcalwiring.jpg';
+import electricalImage6 from '../images/building.jpg';
 import flooringImage from '../images/flooring.jpg';
 import flooringImage2 from '../images/tiling.jpg';
 import flooringImage3 from '../images/tiling3.jpg';
-import paintingPavingImage from '../images/building5.jpg';
-import paintingPavingImage2 from '../images/building.jpg';
-import paintingPavingImage3 from '../images/hero.jpg';
+import woodenfloor1 from '../images/woodenfloor1.jpeg';
+import woodenfloor2 from '../images/woodenfloo2.jpeg';
+import paintingPavingImage from '../images/painting1.jpeg';
+import paintingPavingImage2 from '../images/painting2.jpeg';
+import paintingPavingImage3 from '../images/building5.jpg';
 
 export type ServiceItem = {
   slug: ServiceSlug;
@@ -79,7 +85,7 @@ export const services: ServiceItem[] = [
     slug: 'electrical',
     title: 'Electrical',
     image: electricalImage,
-    gallery: [electricalImage, electricalImage2, electricalImage3],
+    gallery: [electricalImage, electricalImage2, electricalImage3, electricalImage4, electricalImage5],
     description:
       'Professional electrical services including wiring, installations, and safety inspections.',
     details: [
@@ -92,7 +98,7 @@ export const services: ServiceItem[] = [
     slug: 'flooring',
     title: 'Flooring',
     image: flooringImage,
-    gallery: [flooringImage, flooringImage2, flooringImage3],
+    gallery: [flooringImage, flooringImage2, flooringImage3, woodenfloor1, woodenfloor2],
     description:
       'Quality flooring solutions from tile to hardwood, installed with precision and care.',
     details: [

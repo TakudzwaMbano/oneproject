@@ -10,6 +10,9 @@ import cabin from '../../images/cabin.jpg';
 import bathroom from '../../images/bathroom.jpg';
 import electrcalwiring from '../../images/electrcalwiring.jpg';
 import electrical from '../../images/electrical.jpg';
+import electrical4 from '../../images/electrical4.jpeg';
+import electrical5 from '../../images/electrical5.jpeg';
+import electrical6 from '../../images/electrical6.jpeg';
 import flooring from '../../images/flooring.jpg';
 import heroImage from '../../images/hero.jpg';
 import IMG20260615 from '../../images/IMG-20260615-WA0020.jpg';
@@ -36,6 +39,8 @@ import plumbing from '../../images/plumbing.jpg';
 import tiling from '../../images/tiling.jpg';
 import tiling3 from '../../images/tiling3.jpg';
 import toilet from '../../images/toilet.jpg';
+import woodenfloor1 from '../../images/woodenfloor1.jpeg';
+import woodenfloor2 from '../../images/woodenfloo2.jpeg';
 
 const galleryImages = [
   { src: building, alt: 'Nutec house exterior', caption: 'Nutec house exterior' },
@@ -44,6 +49,9 @@ const galleryImages = [
   { src: bathroom, alt: 'Finished bathroom renovation', caption: 'Bathroom renovation' },
   { src: electrcalwiring, alt: 'Electrical wiring installation', caption: 'Electrical installation' },
   { src: electrical, alt: 'Completed electrical upgrade', caption: 'Electrical upgrade' },
+  { src: electrical4, alt: 'Electrical panel work', caption: 'Electrical panel' },
+  { src: electrical5, alt: 'Electrical conduit installation', caption: 'Conduit installation' },
+  { src: electrical6, alt: 'Professional electrical service', caption: 'Electrical service' },
   { src: flooring, alt: 'Flooring installation', caption: 'Flooring and tiling' },
   { src: heroImage, alt: 'Construction site overview', caption: 'Project overview' },
   { src: IMG20260615, alt: 'Structural framing progress', caption: 'Structural framing' },
@@ -69,6 +77,8 @@ const galleryImages = [
   { src: plumbing, alt: 'Pipework installation', caption: 'Pipework installation' },
   { src: tiling, alt: 'Floor tiling detail', caption: 'Floor tiling' },
   { src: tiling3, alt: 'Tiling finish', caption: 'Tiling finish' },
+  { src: woodenfloor1, alt: 'Wooden floor installation', caption: 'Wooden floor installation' },
+  { src: woodenfloor2, alt: 'Wide plank wooden floor', caption: 'Wide plank wooden floor' },
   { src: toilet, alt: 'Sanitary installation', caption: 'Sanitary installation' },
 ];
 

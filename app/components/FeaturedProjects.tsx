@@ -16,9 +16,9 @@ const projects = [
     image: project1,
   },
   {
-    title: 'Garden Wendy House',
+    title: 'Office Overlap Nutech / Nutech Offices',
     location: 'Pretoria, Gauteng',
-    service: 'Wendy Houses',
+    service: 'Nutech Offices',
     image: project2,
   },
   {
