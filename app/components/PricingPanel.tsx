@@ -1,5 +1,6 @@
 'use client';
 
+import { useRef } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import {
@@ -44,6 +45,23 @@ const wendyPriceRows = [
 ];
 
 export default function PricingPanel() {
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+  const handleRequestQuote = () => {
+    // Close the sheet
+    if (closeButtonRef.current) {
+      closeButtonRef.current.click();
+    }
+
+    // Scroll to contact section after a small delay to allow panel animation to complete
+    setTimeout(() => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 350);
+  };
+
   return (
     <Sheet>
       <div>
@@ -68,6 +86,7 @@ export default function PricingPanel() {
         className="h-full w-full max-w-[500px] border-l border-gray-200 bg-white p-0 shadow-2xl shadow-black/10 sm:max-w-[80vw] lg:max-w-[500px] rounded-none"
       >
         <div className="flex h-full flex-col overflow-hidden">
+          <SheetClose ref={closeButtonRef} className="sr-only" />
           <div className="sticky top-0 z-20 border-b border-gray-200 bg-white/95 px-6 py-5 backdrop-blur-sm">
             <div className="flex items-start justify-between gap-4">
               <SheetHeader>
@@ -158,10 +177,11 @@ export default function PricingPanel() {
             </div>
 
             <div className="mt-6">
-              <Button asChild className="w-full sm:w-auto">
-                <Link href="#contact" className="w-full text-center">
-                  Request a Quote
-                </Link>
+              <Button 
+                onClick={handleRequestQuote}
+                className="w-full sm:w-auto"
+              >
+                Request a Quote
               </Button>
             </div>
           </div>
