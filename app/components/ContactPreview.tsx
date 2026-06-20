@@ -3,45 +3,13 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, MessageCircle } from 'lucide-react';
 
-const contactButtons = [
-  {
-    type: 'phone',
-    label: '+27 71 901 2337',
-    icon: Phone,
-    href: 'tel:+27719012337',
-    bgColor: 'bg-red-500',
-    hoverColor: 'hover:bg-red-600',
-  },
-  {
-    type: 'whatsapp',
-    label: '+27 71 901 2337',
-    icon: MessageCircle,
-    href: 'https://wa.me/27719012337?text=Hi,%20I%20need%20a%20quote',
-    bgColor: 'bg-teal-500',
-    hoverColor: 'hover:bg-teal-600',
-  },
-  {
-    type: 'whatsapp',
-    label: '+27 84 278 5134',
-    icon: MessageCircle,
-    href: 'https://wa.me/27842785134?text=Hi,%20I%20need%20a%20quote',
-    bgColor: 'bg-teal-500',
-    hoverColor: 'hover:bg-teal-600',
-  },
-  {
-    type: 'email',
-    label: 'Email',
-    icon: Mail,
-    href: 'mailto:sibandadanzel@gmail.com',
-    bgColor: 'bg-green-500',
-    hoverColor: 'hover:bg-green-600',
-  },
-];
+// ContactPreview renders phone (call-only), WhatsApp (unchanged), and email buttons.
 
 export default function ContactPreview() {
-  const phoneNumberDisplay = '061 620 5964';
-  const telHref = 'tel:+27616205964';
-  const waHref = 'https://wa.me/27616205964?text=Hi,%20I%20need%20a%20quote';
+  const phoneNumberDisplay = '+27 71 901 2337';
+  const telHref = 'tel:+27719012337';
+  const waNumberDisplay = '+27 84 278 5134';
+  const waHref = 'https://wa.me/27842785134?text=Hi,%20I%20need%20a%20quote';
 
   return (
     <section id="contact" className="py-24 bg-gradient-to-b from-gray-900 to-gray-800">
@@ -81,7 +49,7 @@ export default function ContactPreview() {
               transition={{ duration: 0.5, delay: 0.06 }}
             >
               <MessageCircle className="w-6 h-6" />
-              <span className="whitespace-nowrap">{phoneNumberDisplay}</span>
+              <span className="whitespace-nowrap">{waNumberDisplay}</span>
             </motion.a>
           </div>
 
