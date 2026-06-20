@@ -17,20 +17,18 @@ import wendyImage4 from '../images/cabin.jpg';
 import plumbingImage from '../images/plumbing.jpg';
 import plumbingImage2 from '../images/plumb2.jpg';
 import plumbingImage3 from '../images/plumbin3.jpg';
-import electricalImage from '../images/electrical.jpg';
-import electricalImage2 from '../images/electrical4.jpeg';
-import electricalImage3 from '../images/electrical5.jpeg';
-import electricalImage4 from '../images/electrical6.jpeg';
-import electricalImage5 from '../images/electrcalwiring.jpg';
-import electricalImage6 from '../images/building.jpg';
-import flooringImage from '../images/flooring.jpg';
+import electricalImage from '../images/electrical4.jpeg';
+import electricalImage2 from '../images/electrical5.jpeg';
+import electricalImage3 from '../images/electrical6.jpeg';
+import electricalImage4 from '../images/electrcalwiring.jpg';
+import electricalImage5 from '../images/building.jpg';
+import flooringImage from '../images/woodenfloor1.jpeg';
 import flooringImage2 from '../images/tiling.jpg';
 import flooringImage3 from '../images/tiling3.jpg';
 import woodenfloor1 from '../images/woodenfloor1.jpeg';
 import woodenfloor2 from '../images/woodenfloo2.jpeg';
 import paintingPavingImage from '../images/painting1.jpeg';
 import paintingPavingImage2 from '../images/painting2.jpeg';
-import paintingPavingImage3 from '../images/building5.jpg';
 
 export type ServiceItem = {
   slug: ServiceSlug;
@@ -111,7 +109,7 @@ export const services: ServiceItem[] = [
     slug: 'painting-paving',
     title: 'Painting & Paving',
     image: paintingPavingImage,
-    gallery: [paintingPavingImage, paintingPavingImage2, paintingPavingImage3],
+    gallery: [paintingPavingImage, paintingPavingImage2],
     description:
       'Complete painting services and professional paving for driveways and outdoor areas.',
     details: [

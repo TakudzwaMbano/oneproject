@@ -94,12 +94,12 @@ export default function PricingPanel() {
             <div className="space-y-6">
               {[
                 {
-                  title: 'Wendy House Price List',
-                  rows: wendyPriceRows,
+                  title: 'Overlapping Nutec House Price List',
+                  rows: overlappingPriceRows,
                 },
                 {
-                  title: 'Overlapping Nutec Wendy House Price List',
-                  rows: overlappingPriceRows,
+                  title: 'Wendy House Price List',
+                  rows: wendyPriceRows,
                 },
               ].map((table, tableIndex) => (
                 <div key={tableIndex} className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm">

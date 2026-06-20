@@ -149,10 +149,10 @@ export default function ServicePage({ params }: Props) {
 
         <div className="mt-12">
           <Link
-            href="/"
+            href="/#services"
             className="inline-flex items-center text-sm font-semibold text-brand-charcoal hover:text-brand-green transition-colors"
           >
-            ← Back to Home
+            ← Back to Services
           </Link>
         </div>
       </div>

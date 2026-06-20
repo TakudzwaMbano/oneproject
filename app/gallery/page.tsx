@@ -132,10 +132,10 @@ export default function GalleryPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
-                href="/"
+                href="/#services"
                 className="inline-flex items-center justify-center border border-brand-charcoal px-5 py-3 text-sm font-semibold uppercase tracking-wide text-brand-charcoal transition-colors hover:bg-brand-charcoal hover:text-white"
               >
-                Back to home
+                Back to Services
               </Link>
             </div>
           </div>

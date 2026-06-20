@@ -21,6 +21,14 @@ const contactButtons = [
     hoverColor: 'hover:bg-teal-600',
   },
   {
+    type: 'whatsapp',
+    label: '+27 84 278 5134',
+    icon: MessageCircle,
+    href: 'https://wa.me/27842785134?text=Hi,%20I%20need%20a%20quote',
+    bgColor: 'bg-teal-500',
+    hoverColor: 'hover:bg-teal-600',
+  },
+  {
     type: 'email',
     label: 'Email',
     icon: Mail,
