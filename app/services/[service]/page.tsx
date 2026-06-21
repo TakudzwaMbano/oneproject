@@ -95,6 +95,16 @@ export default function ServicePage({ params }: Props) {
         </section>
 
         <section className="mb-12">
+          <div className="mb-6">
+            <p className="text-sm uppercase tracking-[0.3em] text-brand-green mb-2">
+              {params.service === 'nutec-houses' ? 'Finished Projects' : 'Project Gallery'}
+            </p>
+            <h2 className="text-3xl font-bold text-brand-charcoal">
+              {params.service === 'nutec-houses'
+                ? 'Completed Nutec Houses'
+                : `${service.title} Gallery`}
+            </h2>
+          </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {service.gallery.map((image, index) => (
               <article key={index} className="overflow-hidden border border-gray-200 bg-white shadow-sm">

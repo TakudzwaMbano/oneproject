@@ -14,6 +14,14 @@ import wendyImage from '../images/wendyhouse1.jpeg';
 import wendyImage2 from '../images/wendyhouse2.jpeg';
 import wendyImage3 from '../images/wendyhouse3.jpeg';
 import wendyImage4 from '../images/cabin.jpg';
+import finishedNutecHouse1 from '../images/finshednutechouse1.jpeg';
+import finishedNutecHouse2 from '../images/finshednutechouse2.jpeg';
+import finishedNutecHouse3 from '../images/finishednutechouse3.jpeg';
+import finishedNutecInside from '../images/nutecinside.jpeg';
+import nutechouse7 from '../images/nutechouse7.jpeg';
+import nutechouse8 from '../images/nutechouse8.jpeg';
+import nutechouse9 from '../images/nutechouse9.jpeg';
+import nutechouse10 from '../images/nutechouse10.jpeg';
 import plumbingImage from '../images/plumbing.jpg';
 import plumbingImage2 from '../images/plumb2.jpg';
 import plumbingImage3 from '../images/plumbin3.jpg';
@@ -44,7 +52,19 @@ export const services: ServiceItem[] = [
     slug: 'nutec-houses',
     title: 'Nutec Houses',
     image: nutecImage,
-    gallery: [nutecImage, nutecImage2, nutecImage3],
+    gallery: [
+      nutecImage,
+      nutecImage2,
+      nutecImage3,
+      finishedNutecHouse1,
+      finishedNutecHouse2,
+      finishedNutecHouse3,
+      finishedNutecInside,
+      nutechouse7,
+      nutechouse8,
+      nutechouse9,
+      nutechouse10,
+    ],
     description:
       'Premium Nutec board construction for durable, weather-resistant structures built to last.',
     details: [
