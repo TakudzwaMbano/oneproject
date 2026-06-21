@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import aboutImage from '../../images/building.jpg';
+import aboutImage from '../../images/new hero.jpeg';
 
 export default function AboutPreview() {
   return (

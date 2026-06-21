@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { OptimizedImage } from '../components/OptimizedImage';
-import building from '../../images/building.jpg';
+import building from '../../images/new hero.jpeg';
 import building5 from '../../images/building5.jpg';
 import cabin from '../../images/cabin.jpg';
 import bathroom from '../../images/bathroom.jpg';

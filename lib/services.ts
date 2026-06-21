@@ -7,7 +7,7 @@ export type ServiceSlug =
   | 'painting-paving';
 
 import type { StaticImageData } from 'next/image';
-import nutecImage from '../images/building.jpg';
+import nutecImage from '../images/new hero.jpeg';
 import nutecImage2 from '../images/building5.jpg';
 import nutecImage3 from '../images/hero.jpg';
 import wendyImage from '../images/wendyhouse1.jpeg';
@@ -29,7 +29,7 @@ import electricalImage from '../images/electrical4.jpeg';
 import electricalImage2 from '../images/electrical5.jpeg';
 import electricalImage3 from '../images/electrical6.jpeg';
 import electricalImage4 from '../images/electrcalwiring.jpg';
-import electricalImage5 from '../images/building.jpg';
+import electricalImage5 from '../images/new hero.jpeg';
 import flooringImage from '../images/woodenfloor1.jpeg';
 import flooringImage2 from '../images/tiling.jpg';
 import flooringImage3 from '../images/tiling3.jpg';

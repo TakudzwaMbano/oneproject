@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import project1 from '../../images/building.jpg';
+import project1 from '../../images/new hero.jpeg';
 import project2 from '../../images/cabin.jpg';
 import project3 from '../../images/building5.jpg';
 
