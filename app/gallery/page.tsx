@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { OptimizedImage } from '../components/OptimizedImage';
 import building from '../../images/new hero.jpeg';
 import building5 from '../../images/building5.jpg';
-import cabin from '../../images/cabin.jpg';
+import nutechouse10 from '../../images/nutechouse10.jpeg';
 import bathroom from '../../images/bathroom.jpg';
 import electrcalwiring from '../../images/electrcalwiring.jpg';
 import electrical from '../../images/electrical.jpg';
@@ -45,7 +45,7 @@ import woodenfloor2 from '../../images/woodenfloo2.jpeg';
 const galleryImages = [
   { src: building, alt: 'Nutec house exterior', caption: 'Nutec house exterior' },
   { src: building5, alt: 'Commercial project elevation', caption: 'Commercial build finish' },
-  { src: cabin, alt: 'Wendy house project', caption: 'Wendy house installation' },
+  { src: nutechouse10, alt: 'Nutec house exterior', caption: 'Nutec house installation' },
   { src: bathroom, alt: 'Finished bathroom renovation', caption: 'Bathroom renovation' },
   { src: electrcalwiring, alt: 'Electrical wiring installation', caption: 'Electrical installation' },
   { src: electrical, alt: 'Completed electrical upgrade', caption: 'Electrical upgrade' },

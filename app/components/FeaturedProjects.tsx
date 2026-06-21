@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import project1 from '../../images/new hero.jpeg';
-import project2 from '../../images/cabin.jpg';
+import project2 from '../../images/nutechouse10.jpeg';
 import project3 from '../../images/building5.jpg';
 
 const projects = [
