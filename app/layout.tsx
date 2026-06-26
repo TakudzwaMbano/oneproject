@@ -9,7 +9,7 @@ const inter = Inter({
   display: 'swap',
 });
 
-const siteUrl = 'https://greenbuildnutec.co.za';
+const siteUrl = 'https://greenbuildnutecandwendyhouses.co.za';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
