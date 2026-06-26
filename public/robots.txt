@@ -1,3 +1,4 @@
 User-agent: *
 Disallow:
-Sitemap: https://greenbuildnutec.co.za/sitemap.xml
+
+Sitemap: https://greenbuildnutecandwendyhouses.co.za/sitemap.xml
