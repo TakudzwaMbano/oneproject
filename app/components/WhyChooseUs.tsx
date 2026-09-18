@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { CheckCircle, Users, Shield, Wallet, Clock, ThumbsUp } from 'lucide-react';
-import reasonImage from '../../images/building5.jpg';
+import reasonImage from '../../images/new image 5.jpeg';
 
 const reasons = [
   {

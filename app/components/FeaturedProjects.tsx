@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import project1 from '../../images/new hero.jpeg';
-import project2 from '../../images/nutechouse10.jpeg';
-import project3 from '../../images/building5.jpg';
+import project1 from '../../images/new image 2.jpeg';
+import project2 from '../../images/new image 3.jpeg';
+import project3 from '../../images/new image 4.jpeg';
 
 const projects = [
   {
