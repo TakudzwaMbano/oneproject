@@ -3,8 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getServiceBySlug, services } from '../../../lib/services';
-import { nutecHousesPricing, overlappingNutecWendyPricing, wendyHousesPricing } from '../../../lib/pricing';
-import PricingTable from '../../../app/components/PricingTable';
 
 type Props = {
   params: {
@@ -120,14 +118,6 @@ export default function ServicePage({ params }: Props) {
             ))}
           </div>
         </section>
-
-        {params.service === 'wendy-houses' && (
-          <PricingTable tables={[wendyHousesPricing, overlappingNutecWendyPricing]} />
-        )}
-        {params.service === 'nutec-houses' && (
-          <PricingTable tables={[nutecHousesPricing]} />
-        )}
-
 
         <div className="grid gap-8 lg:grid-cols-[1fr_280px] items-start">
           <article className="space-y-8">
