@@ -11,11 +11,14 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          green: '#4CAF22',
-          'green-dark': '#3d911b',
-          charcoal: '#1F2933',
-          white: '#FFFFFF',
-          gray: '#F4F4F4',
+          green: '#1F5F2A',
+          'green-dark': '#163F1E',
+          'green-light': '#2F7D3E',
+          charcoal: '#1E2F2F',
+          white: '#FBFCFA',
+          gray: '#EAF2E4',
+          muted: '#3D5645',
+          line: '#C9D3C5',
         },
       },
       fontFamily: {

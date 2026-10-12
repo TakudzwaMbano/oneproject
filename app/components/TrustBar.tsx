@@ -18,7 +18,7 @@ const trustItems = [
   },
   {
     icon: MapPin,
-    text: 'South African Service Coverage',
+    text: 'Cape Town Service Coverage',
   },
 ];
 

@@ -32,7 +32,7 @@ export function generateMetadata({ params }: Props): Metadata {
       'Nutec',
       'Wendy house',
       'construction',
-      'South Africa',
+      'Cape Town',
     ],
     openGraph: {
       title: `${service.title} | Greenbuild`,
@@ -135,7 +135,7 @@ export default function ServicePage({ params }: Props) {
             <h3 className="text-xl font-semibold text-brand-charcoal mb-4">Why choose us?</h3>
             <ul className="space-y-3 text-gray-600 list-disc list-inside">
               <li>Experienced local contractors</li>
-              <li>Durable results built for South African conditions</li>
+              <li>Durable results built for Cape Town conditions</li>
               <li>Clear communication and on-time delivery</li>
             </ul>
             <Link

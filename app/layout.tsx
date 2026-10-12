@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     template: '%s | Greenbuild Nutec & Wendy Houses',
   },
   description:
-    'Delivering durable Nutec houses, Wendy houses, and professional property improvement services across South Africa. Quality workmanship you can trust.',
+    'Delivering durable Nutec houses, Wendy houses, and professional property improvement services in Cape Town. Quality workmanship you can trust.',
   openGraph: {
     title: 'Greenbuild Nutec and Wendy Houses',
     description:
-      'Premium Nutec & Wendy House Construction Services in South Africa',
+      'Premium Nutec & Wendy House Construction Services in Cape Town',
     type: 'website',
     siteName: 'Greenbuild Nutec & Wendy Houses',
     locale: 'en_ZA',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Greenbuild Nutec and Wendy Houses',
     description:
-      'Premium Nutec & Wendy House Construction Services in South Africa',
+      'Premium Nutec & Wendy House Construction Services in Cape Town',
   },
   robots: {
     index: true,

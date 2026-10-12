@@ -5,12 +5,13 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
-import logoImage from '../../images/logo.png';
+import logoImage from '../../images/new logo.jpeg';
 
 const navigation = [
-  { name: 'Home', href: '#' },
+  { name: 'Home', href: '/' },
   { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
+  { name: 'Prices', href: '/prices' },
   { name: 'Gallery', href: '/gallery' },
   { name: 'Contact', href: '#contact' },
 ];
@@ -39,37 +40,21 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-white border-b border-gray-200'
-          : 'bg-transparent'
+          : 'bg-brand-green/95 border-b border-white/10'
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <nav className="max-w-7xl mx-auto px-4 lg:px-8 pt-1">
+        <div className="flex items-center justify-between h-14">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="relative h-12 w-12 overflow-hidden">
+          <Link href="/" className="flex items-center pt-1">
+            <div className="relative h-10 w-28 sm:h-12 sm:w-32">
               <Image
                 src={logoImage}
                 alt="Greenbuild logo"
-                sizes="48px"
-                className="object-contain"
+                sizes="(max-width: 640px) 112px, 128px"
+                className="h-full w-full object-contain drop-shadow-sm"
                 priority
               />
-            </div>
-            <div className="flex flex-col">
-              <span
-                className={`text-xl font-bold tracking-tight transition-colors ${
-                  isScrolled ? 'text-brand-charcoal' : 'text-white'
-                }`}
-              >
-                GREENBUILD
-              </span>
-              <span
-                className={`text-[10px] font-medium tracking-widest uppercase transition-colors ${
-                  isScrolled ? 'text-brand-green' : 'text-brand-green'
-                }`}
-              >
-                NUTEC & WENDY HOUSES
-              </span>
             </div>
           </Link>
 

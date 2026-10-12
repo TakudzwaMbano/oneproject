@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Greenbuild Nutec & Wendy Houses | Built to last across South Africa</title>
+<meta name="description" content="Nutec houses, Wendy houses, plumbing, electrical, flooring, painting and paving across South Africa. Get a quote on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF2EA;--surface:#FBFCFA;--ink:#1E2F2F;--muted:#4D5E5C;--green:#3F7F18;--green-ink:#fff;--ochre:#6AAE2E;--leaf:#6AAE2E;--line:#C9D3C5;--board:#D6DDD2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101A19;--surface:#172423;--ink:#E8EFE6;--muted:#A5B5B1;--green:#7DC243;--green-ink:#0C1511;--ochre:#8FD14F;--leaf:#8FD14F;--line:#2A3B38;--board:#223230}}
+:root[data-theme="dark"]{--bg:#101A19;--surface:#172423;--ink:#E8EFE6;--muted:#A5B5B1;--green:#7DC243;--green-ink:#0C1511;--ochre:#8FD14F;--leaf:#8FD14F;--line:#2A3B38;--board:#223230}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:'Bricolage Grotesque',Figtree,sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+h1{font-size:clamp(2.5rem,7vw,5rem);font-weight:800}
+h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:700;margin-bottom:.6em}
+h3{font-size:1.25rem;font-weight:700;margin-bottom:.3em}
+p{margin:0 0 1em;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ochre);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.btn{display:inline-block;padding:14px 24px;border-radius:4px;font-weight:600;text-decoration:none;border:2px solid var(--green);background:var(--green);color:var(--green-ink);cursor:pointer;font:600 1rem Figtree,sans-serif}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink)}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 1.15rem 'Bricolage Grotesque',sans-serif;text-decoration:none;letter-spacing:-.01em}
+.logo small{display:block;font:500 .7rem Figtree,sans-serif;color:var(--muted);letter-spacing:0}
+.nav nav{display:flex;gap:22px;align-items:center}
+.nav nav a{text-decoration:none;font-weight:500;font-size:.95rem}
+.nav .btn{padding:9px 16px;font-size:.9rem}
+@media(max-width:760px){.nav nav a:not(.btn){display:none}}
+.hero{padding:56px 0 72px}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+@media(max-width:860px){.hero .grid{grid-template-columns:1fr}}
+.lead{font-size:1.2rem;color:var(--muted);margin:22px 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.house{width:100%;height:auto;display:block;border:1px solid var(--line);background:var(--surface)}
+.board{background:repeating-linear-gradient(180deg,var(--board) 0 26px,var(--line) 26px 28px)}
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+@media(max-width:860px){.services{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.services{grid-template-columns:1fr}}
+.svc{padding:28px 24px;border:1px solid var(--line);margin:-1px 0 0 -1px;background:var(--bg)}
+.svc.main{background:var(--green);color:var(--green-ink)}
+.svc.main p{color:inherit;opacity:.92}
+.svc p{color:var(--muted);margin:0;font-size:.97rem}
+.svc.main p{color:inherit}
+.compare{overflow-x:auto;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.97rem}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:700 1rem 'Bricolage Grotesque',sans-serif;background:var(--surface)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600;white-space:nowrap}
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.steps li{counter-increment:s;border-top:4px solid var(--green);padding-top:14px}
+.steps li::before{content:counter(s);font:800 2rem 'Bricolage Grotesque',sans-serif;color:var(--ochre);display:block}
+.steps p{color:var(--muted);font-size:.97rem;margin:0}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:760px){.work{grid-template-columns:1fr}}
+.work figure{margin:0;border:1px solid var(--line);background:var(--surface)}
+.work svg{display:block;width:100%;height:auto}
+.work figcaption{padding:14px 16px}
+.work figcaption span{color:var(--muted);font-size:.92rem;display:block}
+.areas{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none;margin:0 0 1em}
+.areas li{border:1px solid var(--line);padding:8px 14px;border-radius:99px;background:var(--surface);font-size:.95rem}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{font:700 1.1rem 'Bricolage Grotesque',sans-serif;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--ochre);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{margin:12px 0 0;color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:.92rem;display:grid;gap:6px}
+input,select,textarea{font:400 1rem Figtree,sans-serif;padding:12px;border:1.5px solid var(--line);border-radius:4px;background:var(--surface);color:var(--ink);width:100%}
+.note{font-size:.88rem;color:var(--muted);margin:0}
+.cl a{display:block;font:700 1.4rem 'Bricolage Grotesque',sans-serif;text-decoration:none;margin-bottom:6px}
+footer{border-top:1px solid var(--line);padding:32px 0 calc(32px + 70px);color:var(--muted);font-size:.9rem}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:#1FA855;color:#fff;border-radius:99px;padding:13px 20px;font-weight:600;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--bg);padding:8px;z-index:50}
+@media(prefers-reduced-motion:no-preference){.house .door{animation:in .9s .2s both}@keyframes in{from{opacity:0;transform:translateY(8px)}}}
+.logo{display:flex;align-items:center;gap:10px}.mark{height:46px;width:auto;flex:none}.lt{display:flex;flex-direction:column;line-height:1}.lt b{font:800 1.15rem 'Bricolage Grotesque',sans-serif;letter-spacing:.01em;color:var(--ink)}.lt i{font-style:normal;color:var(--leaf)}.lt em{font:600 .62rem Figtree,sans-serif;letter-spacing:.38em;color:var(--leaf);margin-top:4px;font-style:normal}.lt small{font:500 .58rem Figtree,sans-serif;letter-spacing:.2em;color:var(--muted);margin-top:3px}
+</style>
+</head>
+<body>
+<a class="skip" href="#quote">Skip to quote form</a>
+<header><div class="wrap nav">
+<a class="logo" href="#" aria-label="Greenbuild Nutec & Wendy Houses"><svg class="mark" viewBox="0 0 200 140" aria-hidden="true"><path d="M60 72A60 60 0 0 1 176 60" fill="none" stroke="var(--leaf)" stroke-width="6" stroke-linecap="round"/><path d="M30 58C18 90 38 116 64 122C72 94 64 68 30 58Z" fill="var(--leaf)"/><path d="M40 70C50 90 56 104 62 116" stroke="var(--surface)" stroke-width="2" fill="none"/><path d="M74 74C74 56 92 50 104 52C104 70 94 84 78 92Z" fill="var(--leaf)"/><rect x="98" y="74" width="74" height="42" fill="var(--ink)"/><polygon points="92,76 134,52 180,78 174,80 134,58 96,80" fill="var(--leaf)"/><polygon points="96,80 134,58 174,80 174,76 134,53 96,76" fill="var(--leaf)"/><rect x="106" y="84" width="16" height="17" fill="var(--surface)"/><path d="M114 84v17M106 92h16" stroke="var(--ink)" stroke-width="1.5"/><rect x="131" y="86" width="14" height="30" fill="none" stroke="var(--surface)" stroke-width="2"/><path d="M44 120Q112 100 188 118Q112 112 44 120Z" fill="var(--leaf)"/></svg><span class="lt"><b><i>GREEN</i>BUILD</b><em>NUTEC</em><small>WENDY HOUSES</small></span></a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="https://claude.ai/artifact/61onfH2jjLZJTJoQrd8vjU">Prices</a><a href="#compare">Nutec vs Wendy</a><a href="#work">Our work</a><a href="#faq">FAQ</a><a class="btn" href="#quote">Get a quote</a></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap grid">
+<div>
+<h1>Nutec and Wendy houses, built to last.</h1>
+<p class="lead">We supply, deliver and install Nutec houses and Wendy houses across South Africa, and handle the plumbing, electrical, flooring, painting and paving too.</p>
+<div class="cta"><a class="btn" href="#quote">Get a free quote</a><a class="btn alt" href="https://wa.me/27842785134?text=Hi%2C%20I%20need%20a%20quote">Chat on WhatsApp</a></div>
+</div>
+<svg class="house" viewBox="0 0 480 360" role="img" aria-label="Illustration of a Nutec board house with a pitched roof and a veranda">
+<defs><pattern id="lap" width="20" height="30" patternUnits="userSpaceOnUse"><rect width="20" height="30" fill="#243838"/><rect y="27" width="20" height="3" fill="#355150"/></pattern></defs>
+<rect width="480" height="360" fill="var(--surface)"/>
+<rect y="300" width="480" height="60" fill="var(--line)"/>
+<polygon points="60,150 240,50 420,150" fill="var(--green)"/>
+<rect x="80" y="150" width="320" height="150" fill="url(#lap)"/>
+<rect x="80" y="150" width="320" height="150" fill="none" stroke="var(--ink)" stroke-width="2"/>
+<g class="door"><rect x="125" y="195" width="60" height="105" fill="var(--ochre)" stroke="var(--ink)" stroke-width="2"/><circle cx="173" cy="250" r="4" fill="var(--ink)"/></g>
+<rect x="230" y="190" width="70" height="60" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/><path d="M265 190v60M230 220h70" stroke="var(--ink)" stroke-width="2"/>
+<rect x="325" y="190" width="50" height="60" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/><path d="M350 190v60" stroke="var(--ink)" stroke-width="2"/>
+<polygon points="60,150 420,150 435,162 45,162" fill="var(--leaf)"/>
+<path d="M90 162v138M390 162v138" stroke="var(--ink)" stroke-width="5" opacity=".0"/>
+<rect x="215" y="285" width="0" height="0"/>
+</svg>
+</div></section>
+
+<section class="band" aria-label="What you get"><div class="wrap">
+<ul class="areas" style="margin:0;justify-content:space-between">
+<li>Supply and installation</li><li>Delivered to site</li><li>Plumbing and electrical in-house</li><li>Quotes on WhatsApp</li>
+</ul></div></section>
+
+<section id="services"><div class="wrap">
+<h2>What we build and fix</h2>
+<div class="services">
+<div class="svc main"><h3>Nutec houses</h3><p>Fibre-cement board construction that resists rot, termites and fire. Built for permanent living, offices and cottages.</p></div>
+<div class="svc main"><h3>Wendy houses</h3><p>Garden rooms, home offices, kids' dens and extra bedrooms, made to your size.</p></div>
+<div class="svc"><h3>Plumbing</h3><p>New installations and repairs for homes and businesses.</p></div>
+<div class="svc"><h3>Electrical</h3><p>Wiring, DB boards, installations and safety checks.</p></div>
+<div class="svc"><h3>Flooring</h3><p>Tile, laminate and hardwood, laid straight and tight.</p></div>
+<div class="svc"><h3>Painting and paving</h3><p>Interior and exterior painting, plus driveways and patios.</p></div>
+</div></div></section>
+
+<section id="compare" class="band"><div class="wrap">
+<h2>Nutec or Wendy house?</h2>
+<p>Both go up quickly. The right one depends on how long you want it to last and how you plan to use it.</p>
+<div class="compare"><table>
+<thead><tr><th></th><th>Nutec house</th><th>Wendy house</th></tr></thead>
+<tbody>
+<tr><td>Material</td><td>Fibre-cement boards on a frame</td><td>Timber</td></tr>
+<tr><td>Best for</td><td>Permanent homes, offices, rental units</td><td>Garden rooms, studios, play space</td></tr>
+<tr><td>Weather and pests</td><td>Resists rot, termites and fire</td><td>Needs regular sealing and treatment</td></tr>
+<tr><td>Upkeep</td><td>Repaint every few years</td><td>Re-varnish or repaint more often</td></tr>
+<tr><td>Speed</td><td>Quick to build compared with brick</td><td>Fastest to put up</td></tr>
+</tbody></table></div>
+<p class="note" style="margin-top:12px">Not sure which fits? Send us your plot size and use, and we'll recommend one.</p>
+</div></section>
+
+<section id="process"><div class="wrap">
+<h2>From first message to handover</h2>
+<ol class="steps">
+<li><h3>Tell us what you need</h3><p>Message us your plot, size and use.</p></li>
+<li><h3>Get your quote</h3><p>We send a clear written quote.</p></li>
+<li><h3>We build</h3><p>Materials delivered, house installed on site.</p></li>
+<li><h3>Handover</h3><p>You inspect the work with us before sign-off.</p></li>
+</ol></div></section>
+
+<section id="work" class="band"><div class="wrap">
+<h2>Recent projects</h2>
+<div class="work">
+<figure><svg viewBox="0 0 300 190" role="img" aria-label="Nutec residence illustration"><rect width="300" height="190" fill="var(--surface)"/><polygon points="40,90 150,30 260,90" fill="var(--green)"/><rect x="50" y="90" width="200" height="80" class="board" fill="var(--board)"/><rect x="70" y="115" width="34" height="55" fill="var(--ochre)"/><rect x="130" y="110" width="45" height="35" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/><rect x="195" y="110" width="35" height="35" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/></svg><figcaption><h3>Modern Nutec residence</h3><span>Johannesburg, Gauteng</span></figcaption></figure>
+<figure><svg viewBox="0 0 300 190" role="img" aria-label="Nutec offices illustration"><rect width="300" height="190" fill="var(--surface)"/><rect x="30" y="60" width="240" height="110" fill="var(--board)"/><rect x="25" y="52" width="250" height="12" fill="var(--green)"/><g fill="var(--surface)" stroke="var(--ink)" stroke-width="2"><rect x="50" y="85" width="40" height="35"/><rect x="110" y="85" width="40" height="35"/><rect x="170" y="85" width="40" height="35"/></g><rect x="225" y="105" width="30" height="65" fill="var(--ochre)"/></svg><figcaption><h3>Nutec offices</h3><span>Pretoria, Gauteng</span></figcaption></figure>
+<figure><svg viewBox="0 0 300 190" role="img" aria-label="Home renovation illustration"><rect width="300" height="190" fill="var(--surface)"/><polygon points="40,95 150,35 260,95" fill="var(--ink)"/><rect x="55" y="95" width="190" height="75" fill="var(--board)"/><rect x="55" y="150" width="190" height="20" fill="var(--ochre)"/><rect x="80" y="110" width="40" height="40" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/><rect x="180" y="110" width="40" height="40" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/></svg><figcaption><h3>Complete home renovation</h3><span>Cape Town, Western Cape</span></figcaption></figure>
+</div>
+<p class="note" style="margin-top:14px">Illustrations stand in for project photos. Swap in real before-and-after photos when you add them.</p>
+</div></section>
+
+<section id="areas"><div class="wrap">
+<h2>Where we work</h2>
+<p>We build across South Africa. Recent work covers:</p>
+<ul class="areas"><li>Johannesburg</li><li>Pretoria</li><li>Cape Town</li><li>Other provinces on request</li></ul>
+</div></section>
+
+<section id="faq" class="band"><div class="wrap" style="max-width:820px">
+<h2>Questions we get asked</h2>
+<details><summary>How long does a Nutec house take to build?</summary><p>It depends on size and site conditions. Send us your plan and we'll give you a timeline with the quote.</p></details>
+<details><summary>Do I need municipal approval?</summary><p>Permanent structures such as Nutec houses usually need approved plans from your municipality. Rules differ by area, so check with yours before building. We can advise on what to prepare.</p></details>
+<details><summary>What does a Nutec house cost?</summary><p>Price depends on floor area, finishes and services (plumbing, electrical). Tell us what you want and we'll quote it in writing.</p></details>
+<details><summary>Can you do the plumbing and electrical as well?</summary><p>Yes. We handle plumbing, electrical, flooring, painting and paving, so one team covers the whole job.</p></details>
+<details><summary>Do you deliver outside the big cities?</summary><p>We serve clients across South Africa. Message us your location and we'll confirm.</p></details>
+</div></section>
+
+<section id="quote"><div class="wrap contact">
+<div>
+<h2>Get a free quote</h2>
+<p>Fill in the form and it opens WhatsApp with your details ready to send. Or call us directly.</p>
+<div class="cl"><a href="tel:+27719012337">071 901 2337</a><a href="tel:+27842785134">084 278 5134</a><a href="mailto:sibandadanzel@gmail.com" style="font-size:1.05rem">sibandadanzel@gmail.com</a></div>
+<p class="note">Greenbuild Security and Energy (Pty) Ltd</p>
+</div>
+<form id="qf">
+<label>Your name<input name="n" required autocomplete="name"></label>
+<label>Phone number<input name="p" type="tel" required autocomplete="tel"></label>
+<label>What do you need?<select name="t"><option>Nutec house</option><option>Wendy house</option><option>Plumbing</option><option>Electrical</option><option>Flooring</option><option>Painting or paving</option></select></label>
+<label>Town or city<input name="l" required></label>
+<label>Size or details (optional)<textarea name="d" rows="3"></textarea></label>
+<button class="btn" type="submit">Send quote request on WhatsApp</button>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap">Greenbuild Nutec & Wendy Houses. Serving South Africa. <a href="#quote">Request a quote</a></div></footer>
+<a class="wa" href="https://wa.me/27842785134?text=Hi%2C%20I%20need%20a%20quote" aria-label="Chat on WhatsApp">WhatsApp us</a>
+
+<script>
+document.getElementById('qf').addEventListener('submit',function(e){
+e.preventDefault();var f=new FormData(e.target);
+var m='Hi Greenbuild, I need a quote.\nName: '+f.get('n')+'\nPhone: '+f.get('p')+'\nService: '+f.get('t')+'\nLocation: '+f.get('l')+'\nDetails: '+(f.get('d')||'-');
+window.open('https://wa.me/27842785134?text='+encodeURIComponent(m),'_blank');
+});
+</script>
+</body>
+</html>

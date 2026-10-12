@@ -4,9 +4,10 @@ import Link from 'next/link';
 import { Mail, Phone } from 'lucide-react';
 
 const quickLinks = [
-  { name: 'Home', href: '#' },
+  { name: 'Home', href: '/' },
   { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
+  { name: 'Prices', href: '/prices' },
   { name: 'Gallery', href: '/gallery' },
   { name: 'Contact', href: '#contact' },
   { name: 'Privacy Policy', href: '/privacy' },
@@ -35,7 +36,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Greenbuild Security and Energy (PTY) LTD specializes in premium Nutec houses, Wendy houses, and comprehensive property improvement services across South Africa.
+              Greenbuild Security and Energy (PTY) LTD specializes in premium Nutec houses, Wendy houses, and comprehensive property improvement services in Cape Town.
             </p>
             <div className="flex items-start gap-3">
               <Mail className="w-5 h-5 text-brand-green flex-shrink-0" />

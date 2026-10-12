@@ -5,6 +5,9 @@ import Link from 'next/link';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { OptimizedImage } from '../components/OptimizedImage';
 import building from '../../images/new hero.jpeg';
+import newGallery1 from '../../images/new gallery 1.jpeg';
+import newGallery2 from '../../images/new gallery 2.jpeg';
+import newGallery3 from '../../images/new gallery 3.jpeg';
 import building5 from '../../images/building5.jpg';
 import nutechouse10 from '../../images/nutechouse10.jpeg';
 import bathroom from '../../images/bathroom.jpg';
@@ -32,6 +35,9 @@ import IMG20260617WA0071 from '../../images/IMG-20260617-WA0071.jpg';
 import IMG20260617WA0073 from '../../images/IMG-20260617-WA0073.jpg';
 import IMG20260617WA0075 from '../../images/IMG-20260617-WA0075.jpg';
 import IMG20260617WA0076 from '../../images/IMG-20260617-WA0076.jpg';
+import newPlumbing1 from '../../images/new plumbing 1.jpeg';
+import newPlumbing2 from '../../images/new plumbing 2.jpeg';
+import newPlumbing3 from '../../images/new plumbing 3.jpeg';
 import plumb2 from '../../images/plumb2.jpg';
 import plumbin3 from '../../images/plumbin3.jpg';
 import plumbin4 from '../../images/plumbin4.jpg';
@@ -44,6 +50,9 @@ import woodenfloor2 from '../../images/woodenfloo2.jpeg';
 
 const galleryImages = [
   { src: building, alt: 'Nutec house exterior', caption: 'Nutec house exterior' },
+  { src: newGallery1, alt: 'New gallery project 1', caption: 'New Gallery 1' },
+  { src: newGallery2, alt: 'New gallery project 2', caption: 'New Gallery 2' },
+  { src: newGallery3, alt: 'New gallery project 3', caption: 'New Gallery 3' },
   { src: building5, alt: 'Commercial project elevation', caption: 'Commercial build finish' },
   { src: nutechouse10, alt: 'Nutec house exterior', caption: 'Nutec house installation' },
   { src: bathroom, alt: 'Finished bathroom renovation', caption: 'Bathroom renovation' },
@@ -71,6 +80,9 @@ const galleryImages = [
   { src: IMG20260617WA0073, alt: 'Project detail imagery', caption: 'Detail imagery' },
   { src: IMG20260617WA0075, alt: 'Construction quality check', caption: 'Quality check' },
   { src: IMG20260617WA0076, alt: 'Final project presentation', caption: 'Final presentation' },
+  { src: newPlumbing1, alt: 'New plumbing project 1', caption: 'New Plumbing 1' },
+  { src: newPlumbing2, alt: 'New plumbing project 2', caption: 'New Plumbing 2' },
+  { src: newPlumbing3, alt: 'New plumbing project 3', caption: 'New Plumbing 3' },
   { src: plumb2, alt: 'Plumbing installation', caption: 'Plumbing work' },
   { src: plumbin3, alt: 'Plumbing project detail', caption: 'Plumbing detail' },
   { src: plumbin4, alt: 'Finished plumbing fit-out', caption: 'Plumbing fit-out' },

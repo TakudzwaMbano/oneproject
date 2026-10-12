@@ -2,12 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg: #eaf2e4;
+  --surface: #f7faf5;
+  --ink: #1e2f2f;
+  --muted: #3d5645;
+  --green: #1f5f2a;
+  --green-ink: #fff;
+  --ochre: #2f7d3e;
+  --leaf: #2f7d3e;
+  --line: #c9d3c5;
+  --stripe: #edf4ea;
+}
+
 @layer base {
   *,
   *::before,
   *::after {
     box-sizing: border-box;
-  margin: 0;
+    margin: 0;
     padding: 0;
   }
 
@@ -19,13 +32,13 @@
     font-family: var(--font-inter), system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #ffffff;
-    color: #1f2933;
+    background-color: var(--bg);
+    color: var(--ink);
     line-height: 1.5;
   }
 
   ::selection {
-    background-color: #4caf22;
+    background-color: var(--green);
     color: white;
   }
 
