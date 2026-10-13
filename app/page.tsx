@@ -9,6 +9,7 @@ import FeaturedProjects from './components/FeaturedProjects';
 import WhyChooseUs from './components/WhyChooseUs';
 import CallToAction from './components/CallToAction';
 import ContactPreview from './components/ContactPreview';
+import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 
 export const metadata: Metadata = {
@@ -49,6 +50,11 @@ export default function Home() {
         <TrustBar />
         <AboutPreview />
         <Services />
+        <FeaturedProjects />
+        <WhyChooseUs />
+        <CallToAction />
+        <FAQ />
+        <ContactPreview />
         <section className="bg-brand-gray py-20">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="mb-10 text-center">
@@ -101,17 +107,13 @@ export default function Home() {
                 href="https://wa.me/27842785134?text=Hi%2C%20I%20need%20a%20quote"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center border-2 border-brand-charcoal px-8 py-4 text-sm font-semibold uppercase tracking-wide text-brand-charcoal transition-colors hover:bg-brand-charcoal hover:text-white"
+                className="inline-flex items-center justify-center rounded-full border-2 border-brand-charcoal px-8 py-4 text-sm font-semibold uppercase tracking-wide text-brand-charcoal transition-colors hover:bg-brand-charcoal hover:text-white"
               >
                 Ask for custom quote
               </a>
             </div>
           </div>
         </section>
-        <FeaturedProjects />
-        <WhyChooseUs />
-        <CallToAction />
-        <ContactPreview />
       </main>
       <Footer />
     </>
