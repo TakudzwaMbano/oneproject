@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
-import logoImage from '../../images/new logo.jpeg';
+import logoImage from '../../images/logo.png';
 
 const navigation = [
   { name: 'Home', href: '/' },
