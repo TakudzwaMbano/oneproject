@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Mail, Phone } from 'lucide-react';
+import { Mail, MessageCircle, Phone } from 'lucide-react';
 
 const quickLinks = [
   { name: 'Home', href: '/' },
@@ -36,7 +36,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Greenbuild Security and Energy (PTY) LTD specializes in premium Nutec houses, Wendy houses, and comprehensive property improvement services in Cape Town.
+              Premium Nutec houses, Wendy houses, and property improvement services in Cape Town and across the Western Cape.
             </p>
             <div className="flex items-start gap-3">
               <Mail className="w-5 h-5 text-brand-green flex-shrink-0" />
@@ -106,13 +106,15 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-brand-green flex-shrink-0" />
+                <MessageCircle className="w-5 h-5 text-brand-green flex-shrink-0" />
                 <div>
                   <span className="block text-sm text-gray-400">
-                    Alternative
+                    WhatsApp
                   </span>
                   <a
-                    href="tel:+27842785134"
+                    href="https://wa.me/27842785134"
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-sm text-white hover:text-brand-green transition-colors"
                   >
                     +27 84 278 5134

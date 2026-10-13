@@ -21,35 +21,40 @@ export default function ContactPreview() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-400">
+            Greenbuild Security and Energy (Pty) Ltd
+          </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Get In Touch</h2>
         </motion.div>
 
         <div className="flex flex-col items-center gap-4 sm:gap-6">
-          <div className="w-full flex justify-center gap-3 sm:gap-6 flex-nowrap">
+          <div className="flex w-full flex-col justify-center gap-3 sm:flex-row sm:gap-6">
             <motion.a
               href={telHref}
-              className="inline-flex items-center gap-2 sm:gap-4 px-6 sm:px-10 py-3 sm:py-4 rounded-full bg-red-500 hover:bg-red-600 text-white font-semibold text-sm sm:text-lg shadow-lg border border-gray-300 whitespace-nowrap"
+              aria-label={`Call ${phoneNumberDisplay}`}
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-300 bg-red-500 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-red-600 sm:gap-4 sm:px-10 sm:py-4 sm:text-lg"
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
               <Phone className="w-6 h-6" />
-              <span className="whitespace-nowrap">{phoneNumberDisplay}</span>
+              <span>Call {phoneNumberDisplay}</span>
             </motion.a>
 
             <motion.a
               href={waHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 sm:gap-4 px-6 sm:px-10 py-3 sm:py-4 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm sm:text-lg shadow-lg border border-gray-300 whitespace-nowrap"
+              aria-label={`WhatsApp ${waNumberDisplay}`}
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-300 bg-emerald-500 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-emerald-600 sm:gap-4 sm:px-10 sm:py-4 sm:text-lg"
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.06 }}
             >
               <MessageCircle className="w-6 h-6" />
-              <span className="whitespace-nowrap">{waNumberDisplay}</span>
+              <span>WhatsApp {waNumberDisplay}</span>
             </motion.a>
           </div>
 

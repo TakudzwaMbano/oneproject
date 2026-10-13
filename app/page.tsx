@@ -93,7 +93,7 @@ export default function Home() {
             <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
               <Link
                 href="/prices"
-                className="inline-flex items-center justify-center bg-brand-green px-8 py-4 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-brand-green-dark"
+                className="inline-flex items-center justify-center rounded-full bg-brand-green px-8 py-4 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-brand-green-dark"
               >
                 View full price guide
               </Link>

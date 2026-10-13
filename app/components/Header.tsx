@@ -64,9 +64,11 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium tracking-wide uppercase transition-colors hover:text-brand-green ${
-                  isScrolled ? 'text-brand-charcoal' : 'text-white'
-                }`}
+                className={item.name === 'Prices'
+                  ? 'inline-flex items-center rounded-full bg-white px-5 py-2 text-sm font-semibold uppercase tracking-wide text-brand-green transition-colors hover:bg-brand-gray'
+                  : `text-sm font-medium tracking-wide uppercase transition-colors hover:text-brand-green ${
+                      isScrolled ? 'text-brand-charcoal' : 'text-white'
+                    }`}
               >
                 {item.name}
               </Link>
@@ -122,7 +124,9 @@ export default function Header() {
                       key={item.name}
                       href={item.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="block rounded-sm px-4 py-4 text-base font-semibold uppercase tracking-[0.15em] text-brand-charcoal transition-colors hover:bg-brand-gray"
+                      className={item.name === 'Prices'
+                        ? 'my-2 inline-flex rounded-full bg-brand-green px-6 py-3 text-base font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-brand-green-dark'
+                        : 'block rounded-sm px-4 py-4 text-base font-semibold uppercase tracking-[0.15em] text-brand-charcoal transition-colors hover:bg-brand-gray'}
                     >
                       {item.name}
                     </Link>

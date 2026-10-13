@@ -69,7 +69,7 @@ export const services: ServiceItem[] = [
       'Premium Nutec board construction for durable, weather-resistant structures built to last.',
     details: [
       'High-performance Nutec board construction for energy efficiency and durability.',
-      'Weather-resistant wall systems designed to stand up to South Africa’s climate.',
+      'Weather-resistant wall systems designed for Western Cape conditions.',
       'Tailored finishes and strong foundations for residential or commercial builds.',
     ],
   },

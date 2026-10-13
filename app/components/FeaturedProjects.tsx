@@ -11,13 +11,13 @@ import project3 from '../../images/new image 4.jpeg';
 const projects = [
   {
     title: 'Modern Nutec Residence',
-    location: 'Johannesburg, Gauteng',
+    location: 'Cape Town, Western Cape',
     service: 'Nutec Houses',
     image: project1,
   },
   {
     title: 'Office Overlap Nutech / Nutech Offices',
-    location: 'Pretoria, Gauteng',
+    location: 'Western Cape',
     service: 'Nutech Offices',
     image: project2,
   },
