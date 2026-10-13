@@ -191,11 +191,6 @@ importers:
       zod:
         specifier: ^3.23.8
         version: 3.25.76
-    devDependencies:
-      '@types/babel__core':
-        specifier: ^7.20.5
-        version: 7.20.5
-
 packages:
 
   '@alloc/quick-lru@5.2.0':
