@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import houseImage from '../../images/nutechouse10.jpeg';
+import houseImage from '../../images/new hero image 2.jpeg';
 
 export default function Hero() {
   return (
